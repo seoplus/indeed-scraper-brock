@@ -204,7 +204,7 @@ Apify.main(async () => {
                         salary: $('#salaryInfoAndJobType .attribute_snippet').text() !== '' ? $('#salaryInfoAndJobType .attribute_snippet').text() : null,
                         company: $('meta[property="og:description"]').attr('content'),
                         //location: $(".jobsearch-JobInfoHeader-subtitle > div").eq(1).text(),
-                        location: $(".companyLocation > div").eq(1).text(),               
+                        location: $(".css-6z8o9s > div").eq(1).text(),               
                         rating: $('meta[itemprop="ratingValue"]').attr('content') ? Number($('meta[itemprop="ratingValue"]').attr('content')) : null,
                         reviewsCount: $('meta[itemprop="ratingCount"]').attr('content') ? Number($('meta[itemprop="ratingCount"]').attr('content')) : null,
                         url: request.url,
